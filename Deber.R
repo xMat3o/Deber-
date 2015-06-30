@@ -40,7 +40,7 @@ prediccion <- reg1[["fitted.values"]]
 data2 <- data.frame(utic,ventasc,residuo,prediccion)
 View(data2)
 
-hist(residuo,15)
+hist(residuo,15,breaks=5)
 mean(residuo)
 
 #normalidad
